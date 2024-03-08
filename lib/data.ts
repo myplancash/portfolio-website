@@ -64,21 +64,21 @@ export const projectsData = [
   {
     title: "Imaginify",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
+      "Let imaginify empower your creativity and bring your visions to life like never before.",
     tags: ["Javascript", "React", "TypeScript", "Next.js", "Tailwind", "Redux"],
     imageUrl: imaginifyImg,
   },
   {
     title: "Evently",
     description:
-      "Explore a wealth of invaluable insights from 3,168+ mentors within elite global companies through our vibrant community.",
+      "Explore the invaluable insights from 3,168+ mentors within elite global companies through our vibrant community.",
     tags: ["Javascript", "React", "Next.js", "Tailwind", "Node.js", "TypeScript", "TailwindCSS", "Stripe", "Zod", "React Hook Form", "Shadcn-ui", "uploadthing"],
     imageUrl: eventlyImg,
   },
   {
     title: "House Marketplace",
     description:
-      "House marketplace built with React and Firebase",
+      "Discover your dream home with HavenHub – where every listing is a doorway to your perfect sanctuary.",
     tags: ["Javascript", "Node.js", "MongoDB", "SQL", "Tailwind", "Reactjs", "Firebase"],
     imageUrl: houseMarketplaceImg,
   },
