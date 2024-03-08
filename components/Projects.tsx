@@ -1,19 +1,24 @@
-import React from 'react';
-import Project from './Project'; // Import the Project component
-import { projectsData } from '@/lib/data';
+"use client";
 
-const Projects = () => {
+import React from "react";
+import SectionHeading from "./SectionHeading";
+import { projectsData } from "@/lib/data";
+import Project from "./Project";
+import { useSectionInView } from "@/lib/hooks";
+
+export default function Projects() {
+  const { ref } = useSectionInView("Projects", 0.5);
+
   return (
-    <section>
+    <section ref={ref} id="projects" className="scroll-mt-28 mb-28">
+      <SectionHeading>My projects</SectionHeading>
       <div>
         {projectsData.map((project, index) => (
           <React.Fragment key={index}>
-            <Project {...project} imageUrl={project.imageUrl.src} /> {/* Render the Project component */}
+            <Project {...project} />
           </React.Fragment>
         ))}
       </div>
     </section>
   );
-};
-
-export default Projects; // Export the Projects component as default
+}
