@@ -1,10 +1,10 @@
 import React from "react";
-import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
-import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import { CgHome } from "react-icons/cg";
+import { FaBrain } from "react-icons/fa";
+import { LuCalendarCheck } from "react-icons/lu";
+import eventlyImg from "@/public/evently.png";
+import imaginifyImg from "@/public/imaginify.png";
+import houseMarketplaceImg from "@/public/house-marketplace.png";
 
 export const links = [
   {
@@ -35,54 +35,54 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "Imaginify",
+    location: "Remote",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2019",
+      "AI-powered image generator",
+    icon: React.createElement(FaBrain),
+    date: "2024 - present",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    title: "Event Organizing Next App",
+    location: "Remote",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+      "Explore a wealth of invaluable insights from 3,168+ mentors within elite global companies through our vibrant community.",
+    icon: React.createElement(LuCalendarCheck),
+    date: "2023",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    title: "House Marketplace",
+    location: "Remote",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
+      "People can come and register, they can list their homes for rent for sale with an special offer.",
+    icon: React.createElement(CgHome),
+    date: "2019 - 2022",
   },
 ] as const;
 
 export const projectsData = [
   {
-    title: "CorpComment",
-    description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
-  },
-  {
-    title: "rmtDev",
+    title: "Imaginify",
     description:
       "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+    tags: ["Javascript", "React", "TypeScript", "Next.js", "Tailwind", "Redux"],
+    imageUrl: imaginifyImg,
   },
   {
-    title: "Word Analytics",
+    title: "Evently",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+      "Explore a wealth of invaluable insights from 3,168+ mentors within elite global companies through our vibrant community.",
+    tags: ["Javascript", "React", "Next.js", "Tailwind", "Node.js", "TypeScript", "TailwindCSS", "Stripe", "Zod", "React Hook Form", "Shadcn-ui", "uploadthing"],
+    imageUrl: eventlyImg,
   },
-] as const;
+  {
+    title: "House Marketplace",
+    description:
+      "House marketplace built with React and Firebase",
+    tags: ["Javascript", "Node.js", "MongoDB", "SQL", "Tailwind", "Reactjs", "Firebase"],
+    imageUrl: houseMarketplaceImg,
+  },
+];
 
 export const skillsData = [
   "HTML",
@@ -93,15 +93,15 @@ export const skillsData = [
   "Next.js",
   "Node.js",
   "Git",
+  "Node.js",
+  "Shadcn-ui",
+  "clerk",
   "Tailwind",
   "Prisma",
   "MongoDB",
   "Redux",
   "GraphQL",
-  "Apollo",
   "Express",
   "PostgreSQL",
-  "Python",
-  "Django",
   "Framer Motion",
 ] as const;  

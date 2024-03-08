@@ -39,8 +39,8 @@ const Intro = () => {
       >
         <span className="font-bold">Hello, I&apos;m Sergio.</span> I&apos;m a{" "}
         <span className="font-bold">full-stack developer</span> with{" "}
-        <span className="font-bold">+5 years</span> of expertise in crafting.{" "}
-        building <span className="italic">innovative digital solutions</span> tailored to{" "}
+        <span className="font-bold">+5 years</span> of expertise in crafting{" "}
+        <span className="italic">innovative digital solutions</span> tailored to{" "}
         <span className="underline">meet your business objectives.</span>
       </h1>
 
@@ -49,7 +49,7 @@ const Intro = () => {
       >
         <Link
           href="#contact"
-          className="group bg-gray-900 text-white px-7 py-3 flex hover:bg-gray-600 active:bg-gray-700 items-center gap-2 rounded-full outline-none focus:ring focus:scale-110 active:scale-105 transition focus:ring-gray-300"
+          className="group bg-gray-900 text-white px-7 py-3 flex active:bg-gray-700 items-center gap-2 rounded-full outline-none focus:ring focus:scale-110 active:scale-105 focus:ring-gray-300"
           onClick={() => {}}
         >
           Contact me here{" "}
@@ -65,7 +65,7 @@ const Intro = () => {
         </a>
 
         <a
-          className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full focus:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+          className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full focus:scale-[1.15] active:scale-105 cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
           href="https://www.linkedin.com/in/sergioestebantorres/"
           target="_blank"
         >
@@ -73,7 +73,7 @@ const Intro = () => {
         </a>
 
         <a
-          className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+          className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] active:scale-105 cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
           href="https://github.com/myplancash"
           target="_blank"
         >
