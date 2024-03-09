@@ -1,5 +1,6 @@
 "use client";
 
+// the type keyword adds extra safety benefits 
 import type { SectionName } from "@/lib/types";
 import React, { useState, createContext, useContext } from "react";
 
