@@ -1,7 +1,5 @@
 import React from "react";
-import { CgHome } from "react-icons/cg";
-import { FaBrain } from "react-icons/fa";
-import { LuCalendarCheck } from "react-icons/lu";
+import { LuCode, LuCode2, LuFileCode2 } from "react-icons/lu";
 import eventlyImg from "@/public/evently.png";
 import imaginifyImg from "@/public/imaginify.png";
 import houseMarketplaceImg from "@/public/house-marketplace.png";
@@ -33,32 +31,31 @@ export const links = [
   },
 ] as const;
 
+
 export const experiencesData = [
   {
-    title: "Imaginify",
+    title: "Artigen. - Full-stack Developer",
     location: "Remote",
-    description:
-      "AI-powered image generator",
-    icon: React.createElement(FaBrain),
-    date: "2024 - present",
+    description: "Developed a responsive design overhaul that improved mobile usability metrics by 40%",
+    icon: LuCode2, // Use the icon component directly
+    date: "Nov 2023 - Present",
   },
   {
-    title: "Event Organizing Next App",
+    title: "Lifetiment Inc. - Frontend Developer",
     location: "Remote",
-    description:
-      "Explore a wealth of invaluable insights from 3,168+ mentors within elite global companies through our vibrant community.",
-    icon: React.createElement(LuCalendarCheck),
-    date: "2023",
+    description: "Contributed to a major product release that resulted in a 200% increase in user engagement",
+    icon: LuCode, // Use the icon component directly
+    date: "April 2022 - 2023",
   },
   {
-    title: "House Marketplace",
+    title: "Marketmov Group - Full-stack Developer",
     location: "Remote",
-    description:
-      "People can come and register, they can list their homes for rent for sale with an special offer.",
-    icon: React.createElement(CgHome),
-    date: "2019 - 2022",
+    description: "Collaborated with cross-functional teams to deliver a feature under tight deadlines, receiving commendation from stakeholders.",
+    icon: LuFileCode2, // Use the icon component directly
+    date: "January 2019 - Dic 2022",
   },
 ] as const;
+
 
 export const projectsData = [
   {
