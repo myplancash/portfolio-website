@@ -1,7 +1,7 @@
 import React from "react";
 import { LuCode, LuCode2, LuFileCode2 } from "react-icons/lu";
 import eventlyImg from "@/public/evently.png";
-import imaginifyImg from "@/public/imaginify.png";
+import artigenImg from "@/public/artigen.png";
 import houseMarketplaceImg from "@/public/house-marketplace.png";
 
 export const links = [
@@ -59,11 +59,12 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "Imaginify",
+    title: "ArtiGen.",
     description:
-      "Let imaginify empower your creativity and bring your visions to life like never before.",
+      "Let ArtiGen empower your creativity and bring your visions to life like never before.",
     tags: ["Javascript", "React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: imaginifyImg,
+    imageUrl: artigenImg,
+    githubUrl: 'https://imaginify-virid-three.vercel.app'
   },
   {
     title: "Evently",
@@ -71,6 +72,7 @@ export const projectsData = [
       "Explore the invaluable insights from 3,168+ mentors within elite global companies through our vibrant community.",
     tags: ["Javascript", "React", "Next.js", "Tailwind", "Node.js", "TypeScript", "TailwindCSS", "Stripe", "Zod", "React Hook Form", "Shadcn-ui", "uploadthing"],
     imageUrl: eventlyImg,
+    githubUrl: 'https://evently-myplancash.vercel.app'
   },
   {
     title: "House Marketplace",
@@ -78,6 +80,7 @@ export const projectsData = [
       "Discover your dream home with HavenHub – where every listing is a doorway to your perfect sanctuary.",
     tags: ["Javascript", "Node.js", "MongoDB", "SQL", "Tailwind", "Reactjs", "Firebase"],
     imageUrl: houseMarketplaceImg,
+    githubUrl: 'https://house-marketplace-myplancash.vercel.app'
   },
 ];
 
