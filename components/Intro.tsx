@@ -33,7 +33,7 @@ const Intro = () => {
           >
             <Image
               src="/assets/images/profile-sergio.png"
-              alt="Ricardo portrait"
+              alt="Sergio's portrait"
               width="192"
               height="192"
               quality="95"
