@@ -29,7 +29,12 @@ export const links = [
     name: "Contact",
     hash: "#contact",
   },
+  {
+    name: "Blog",
+    url: "https://nextblog-flame-two.vercel.app", // Add the URL of your blog here
+  },
 ] as const;
+
 
 
 export const experiencesData = [
