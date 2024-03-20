@@ -1,15 +1,15 @@
-'use client'
+"use client"
 
-import { useActiveSectionContext } from '@/context/active-section-context'
-import { useSectionInView } from '@/lib/hooks'
-import { motion } from 'framer-motion'
-import Image from 'next/image'
-import Link from 'next/link'
-import { BsArrowRight, BsLinkedin } from 'react-icons/bs'
-import { FaGithubSquare } from 'react-icons/fa'
-import { HiDownload } from 'react-icons/hi'
-import { useInView } from 'react-intersection-observer'
-
+import React from "react";
+import { motion } from "framer-motion";
+import Image from "next/image";
+import Link from "next/link";
+import { BsArrowRight, BsLinkedin } from "react-icons/bs";
+import { FaGithubSquare } from "react-icons/fa";
+import { HiDownload } from "react-icons/hi";
+import { useInView } from "react-intersection-observer";
+import { useActiveSectionContext } from "@/context/active-section-context";
+import { useSectionInView } from "@/lib/hooks";
 
 const Intro = () => {
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
@@ -19,7 +19,7 @@ const Intro = () => {
     <section
       ref={ref}
       id="home"
-      className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]"
+      className="mb-28 max-w-[50rem] text-center sm:mb-0 sm:px-4"
     >
       <div className="flex items-center justify-center">
         <div className="relative">
@@ -58,7 +58,7 @@ const Intro = () => {
         </div>
       </div>
       <motion.h1
-        className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
+        className="mb-10 mt-4 text-2xl font-medium leading-[1.5] sm:text-4xl"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
@@ -70,7 +70,7 @@ const Intro = () => {
       </motion.h1>
 
       <motion.div
-        className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"
+        className="flex flex-col sm:flex-row items-center justify-center gap-2 text-lg font-medium"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{
@@ -80,7 +80,7 @@ const Intro = () => {
         <Link
           href="#contact"
           className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
-          onClick={() => { 
+          onClick={() => {
             setActiveSection("Contact");
             setTimeOfLastClick(Date.now());
           }}
@@ -90,15 +90,16 @@ const Intro = () => {
         </Link>
 
         <a
-          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 cursor-pointer borderBlack dark:bg-white/10"
-          href="/sergios-resume.pdf " download
+          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 cursor-pointer border-black dark:bg-white/10"
+          href="/sergios-resume.pdf"
+          download
         >
           Download CV{" "}
           <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
         </a>
 
         <a
-          className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+          className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer border-black dark:bg-white/10 dark:text-white/60"
           href="https://www.linkedin.com/in/sergioestebantorres/"
           target="_blank"
         >
@@ -106,7 +107,7 @@ const Intro = () => {
         </a>
 
         <a
-          className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+          className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer border-black dark:bg-white/10 dark:text-white/60"
           href="https://github.com/myplancash"
           target="_blank"
         >
@@ -114,7 +115,7 @@ const Intro = () => {
         </a>
       </motion.div>
     </section>
-  )
-}
+  );
+};
 
-export default Intro
+export default Intro;

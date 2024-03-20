@@ -4,36 +4,50 @@ import eventlyImg from "@/public/evently.png";
 import artigenImg from "@/public/artigen.png";
 import houseMarketplaceImg from "@/public/house-marketplace.png";
 
-export const links = [
+export type LinkAnchor = {
+  name: string;
+  hash?: string; // Change type to string
+  url?: URL; // Change type to URL
+  icon?: string;
+};
+
+export const links: readonly LinkAnchor[] = [
   {
     name: "Home",
     hash: "#home",
+    icon: "/assets/icons/home.svg",
   },
   {
     name: "About",
     hash: "#about",
+    icon: "/assets/icons/home.svg",
   },
   {
     name: "Projects",
     hash: "#projects",
+    icon: "/assets/icons/home.svg",
   },
   {
     name: "Skills",
     hash: "#skills",
+    icon: "/assets/icons/home.svg",
   },
   {
     name: "Experience",
     hash: "#experience",
+    icon: "/assets/icons/home.svg",
   },
   {
     name: "Contact",
     hash: "#contact",
+    icon: "/assets/icons/home.svg",
   },
   {
     name: "Blog",
-    url: "https://nextblog-flame-two.vercel.app", // Add the URL of your blog here
+    url: new URL("https://nextblog-flame-two.vercel.app"), // Use URL for external link
+    icon: "/assets/icons/home.svg",
   },
-] as const;
+] as const
 
 
 
