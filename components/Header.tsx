@@ -55,7 +55,7 @@ export default function Header() {
                   )}
                 </Link>
               ) : (
-                <Link
+                <a
                   className={clsx(
                     "flex w-full items-center justify-center px-3 py-3 hover:text-gray-950 transition dark:text-gray-500 dark:hover:text-gray-300",
                     {
@@ -63,12 +63,12 @@ export default function Header() {
                         activeSection === link.name,
                     }
                   )}
-                  href={link.url} // For external links, use link.url
+                  href={link.url?.toString()} // Convert URL to string
                   target="_blank" // Open in a new tab
                   rel="noopener noreferrer" // Security best practice for external links
                 >
                   {link.name}
-                </Link>
+                </a>
               )}
             </motion.li>
           ))}
