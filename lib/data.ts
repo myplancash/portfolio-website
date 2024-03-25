@@ -44,7 +44,7 @@ export const links: readonly LinkAnchor[] = [
   },
   {
     name: "Blog",
-    url: new URL("https://nextblog-flame-two.vercel.app"), // Use URL for external link
+    url: new URL("https://newsletter-1lod4op4c-myplancash.vercel.app"), // Use URL for external link
     icon: "/assets/icons/home.svg",
   },
 ] as const
