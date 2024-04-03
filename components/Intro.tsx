@@ -4,7 +4,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import { BsArrowRight, BsLinkedin } from "react-icons/bs";
+import { BsArrowRight, BsLinkedin, BsTwitterX, BsMedium} from "react-icons/bs";
 import { FaGithubSquare } from "react-icons/fa";
 import { HiDownload } from "react-icons/hi";
 import { useInView } from "react-intersection-observer";
@@ -112,6 +112,22 @@ const Intro = () => {
           target="_blank"
         >
           <FaGithubSquare />
+        </a>
+
+        <a
+          className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer border-black dark:bg-white/10 dark:text-white/60"
+          href="https://twitter.com/keeprules"
+          target="_blank"
+        >
+          <BsTwitterX />
+        </a>
+
+        <a
+          className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer border-black dark:bg-white/10 dark:text-white/60"
+          href="https://medium.com/@sergio.smiling"
+          target="_blank"
+        >
+          <BsMedium />
         </a>
       </motion.div>
     </section>
