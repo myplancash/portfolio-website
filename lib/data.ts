@@ -2,6 +2,7 @@ import React from "react";
 import { LuCode, LuCode2, LuFileCode2 } from "react-icons/lu";
 import eventlyImg from "@/public/evently.png";
 import artigenImg from "@/public/artigen.png";
+import appleImg from "@/public/apple.png";
 import houseMarketplaceImg from "@/public/house-marketplace.png";
 
 export type LinkAnchor = {
@@ -77,6 +78,14 @@ export const experiencesData = [
 
 
 export const projectsData = [
+   {
+    title: "Apple Website",
+    description:
+      "Immerse yourself in the familiar design, stunning visuals, and effortless navigation that echo Apple's iconic style.",
+    tags: ["Javascript", "React", "threejs", "gsap"],
+    imageUrl: appleImg,
+    githubUrl: 'https://apple-website-flax.vercel.app'
+  },
   {
     title: "ArtiGen.",
     description:
