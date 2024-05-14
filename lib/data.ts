@@ -3,6 +3,7 @@ import { LuCode, LuCode2, LuFileCode2 } from "react-icons/lu";
 import eventlyImg from "@/public/evently.png";
 import artigenImg from "@/public/artigen.png";
 import appleImg from "@/public/apple.png";
+import luminaImg from "@/public/lumina.png";
 import houseMarketplaceImg from "@/public/house-marketplace.png";
 
 export type LinkAnchor = {
@@ -78,6 +79,13 @@ export const experiencesData = [
 
 
 export const projectsData = [
+  {
+    title: "Lumina Banking App",
+    description: "Lumina, the future of banking, is a cutting-edge platform designed to empower everyone with seamless financial services.",
+    tags: ["reactjs", "sentry", "nextjs", "chartjs", "tailwindcss", "appwrite", "appwrite-auth", "shadcn-ui"],
+    imageUrl: luminaImg,
+    githubUrl: 'https://lumina-banking-app.vercel.app'
+  },
    {
     title: "Apple Website",
     description:
